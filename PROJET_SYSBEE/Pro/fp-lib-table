@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ADS1231lDR)(type KiCad)(uri ${KISYSMOD}/ADS1231lDR.pretty)(options "")(descr ""))
+)
