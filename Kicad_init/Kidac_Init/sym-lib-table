@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Kidac_Init-rescue)(type Legacy)(uri ${KIPRJMOD}/Kidac_Init-rescue.lib)(options "")(descr ""))
-)
