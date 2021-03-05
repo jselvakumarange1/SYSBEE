@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name sysbee)(type Legacy)(uri ${KIPRJMOD}/sysbee.lib)(options "")(descr ""))
-  (lib (name Sysbee-rescue)(type Legacy)(uri ${KIPRJMOD}/Sysbee-rescue.lib)(options "")(descr ""))
-  (lib (name SYSbee_mod-rescue)(type Legacy)(uri /home/juventin/Documents/SYSbee_mod/SYSbee_mod-rescue.lib)(options "")(descr ""))
-)

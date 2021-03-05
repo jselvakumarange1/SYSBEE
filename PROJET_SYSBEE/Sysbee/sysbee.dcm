@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP LT1764
-D MICROPOWER 100mA LDO adjustable regulator, TSOT-23-5
-K REGULATOR POSITIVE POWER LDO adjustable
-F https://www.analog.com/media/en/technical-documentation/data-sheets/1761sff.pdf
-$ENDCMP
-#
-#End Doc Library
