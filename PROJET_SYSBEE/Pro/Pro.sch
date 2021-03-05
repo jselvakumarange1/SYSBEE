@@ -1,0 +1,268 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Pro-rescue:R-Device R1
+U 1 1 601C2210
+P 4025 3215
+F 0 "R1" H 4095 3261 50  0000 L CNN
+F 1 "100" H 4095 3170 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3955 3215 50  0001 C CNN
+F 3 "~" H 4025 3215 50  0001 C CNN
+	1    4025 3215
+	0    1    1    0   
+$EndComp
+$Comp
+L Pro-rescue:C-Device C2
+U 1 1 601C89B4
+P 4470 4160
+F 0 "C2" H 4260 4200 50  0000 L CNN
+F 1 "0.1u" H 4170 4125 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 4508 4010 50  0001 C CNN
+F 3 "~" H 4470 4160 50  0001 C CNN
+	1    4470 4160
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pro-rescue:C-Device C1
+U 1 1 601D33F5
+P 4525 3365
+F 0 "C1" V 4665 3335 50  0000 L CNN
+F 1 "0.1u" V 4735 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4563 3215 50  0001 C CNN
+F 3 "~" H 4525 3365 50  0001 C CNN
+	1    4525 3365
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pro-rescue:R-Device R2
+U 1 1 601D1ECF
+P 4015 3515
+F 0 "R2" H 4085 3561 50  0000 L CNN
+F 1 "100" H 4085 3470 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3945 3515 50  0001 C CNN
+F 3 "~" H 4015 3515 50  0001 C CNN
+	1    4015 3515
+	0    1    1    0   
+$EndComp
+Text Label 8465 4000 0    50   ~ 0
+GND
+$Comp
+L Pro-rescue:GND-power #PWR01
+U 1 1 601CEF9E
+P 7050 3150
+F 0 "#PWR01" H 7050 2900 50  0001 C CNN
+F 1 "GND" H 7055 2977 50  0000 C CNN
+F 2 "" H 7050 3150 50  0001 C CNN
+F 3 "" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pro-rescue:C-Device C3
+U 1 1 601CCF04
+P 7050 2950
+F 0 "C3" H 7165 2996 50  0000 L CNN
+F 1 "100n" H 7165 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 7088 2800 50  0001 C CNN
+F 3 "~" H 7050 2950 50  0001 C CNN
+	1    7050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4000 4470 4000
+Wire Wire Line
+	4470 4000 4470 4010
+Wire Wire Line
+	4470 4310 4470 4430
+Wire Wire Line
+	4470 4430 4800 4430
+Wire Wire Line
+	4800 3215 4525 3215
+Wire Wire Line
+	4800 3515 4525 3515
+Wire Wire Line
+	4525 3215 4175 3215
+Connection ~ 4525 3215
+Wire Wire Line
+	4525 3515 4165 3515
+Connection ~ 4525 3515
+Wire Wire Line
+	3865 3515 2600 3515
+Wire Wire Line
+	2600 3515 2600 3300
+Wire Wire Line
+	2200 3215 2200 3200
+$Comp
+L Pro-rescue:GND-power #PWR0101
+U 1 1 6027666D
+P 6400 3700
+F 0 "#PWR0101" H 6400 3450 50  0001 C CNN
+F 1 "GND" H 6405 3527 50  0000 C CNN
+F 2 "" H 6400 3700 50  0001 C CNN
+F 3 "" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3400 7800 3400
+Wire Wire Line
+	6400 2800 6450 2800
+Wire Wire Line
+	7050 3150 7050 3100
+Wire Wire Line
+	6400 2900 6450 2900
+Wire Wire Line
+	6450 2900 6450 2800
+Connection ~ 6450 2800
+Wire Wire Line
+	6450 2800 6750 2800
+Wire Wire Line
+	6400 3100 6550 3100
+Wire Wire Line
+	4700 3100 4700 2450
+Wire Wire Line
+	4700 2450 6450 2450
+Wire Wire Line
+	6450 2450 6450 2800
+Wire Wire Line
+	4700 3100 4800 3100
+Wire Wire Line
+	6400 3500 6750 3500
+Wire Wire Line
+	6750 3500 6750 2800
+Connection ~ 6750 2800
+Wire Wire Line
+	6750 2800 7050 2800
+Text Label 8540 3800 0    50   ~ 0
+CLK
+Text Label 8545 3700 0    50   ~ 0
+DO
+$Comp
+L Pro-rescue:Conn_01x04-Connector_Generic J1
+U 1 1 601C0F0B
+P 8900 3900
+F 0 "J1" H 8818 3475 50  0000 C CNN
+F 1 " " H 8818 3566 50  0000 C CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 8900 3900 50  0001 C CNN
+F 3 "~" H 8900 3900 50  0001 C CNN
+	1    8900 3900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7900 3300 7900 3700
+Wire Wire Line
+	7900 3700 8700 3700
+$Comp
+L Pro-rescue:JST-PH4-jst-ph P1
+U 1 1 601CA642
+P 1900 3300
+F 0 "P1" H 1772 3204 50  0000 R CNN
+F 1 " " H 1772 3295 50  0000 R CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 1900 3450 50  0001 C CNN
+F 3 "" H 1900 3300 50  0001 C CNN
+	1    1900 3300
+	1    0    0    1   
+$EndComp
+Connection ~ 4700 3100
+Wire Wire Line
+	2200 3100 4700 3100
+Wire Wire Line
+	2600 3300 2200 3300
+Wire Wire Line
+	2510 3600 4185 3600
+Wire Wire Line
+	3875 3215 2200 3215
+Wire Wire Line
+	2510 3600 2510 3400
+Text Label 2310 3400 2    50   ~ 0
+E-
+Text Label 2310 3300 2    50   ~ 0
+A-
+Text Label 2280 3215 2    50   ~ 0
+A+
+Text Label 2275 3100 2    50   ~ 0
+E+
+Text Label 8575 3900 0    50   ~ 0
+VCC
+Wire Wire Line
+	7050 2800 7670 2800
+Connection ~ 7050 2800
+Wire Wire Line
+	2510 3400 2200 3400
+Wire Wire Line
+	7800 3400 7800 3800
+Wire Wire Line
+	7800 3800 8700 3800
+Wire Wire Line
+	7900 3300 6400 3300
+Wire Wire Line
+	7670 2800 7670 3900
+Wire Wire Line
+	7670 3900 8700 3900
+Wire Wire Line
+	6550 3100 6550 4545
+Wire Wire Line
+	6550 4545 4185 4545
+Wire Wire Line
+	4185 4545 4185 3600
+Connection ~ 4185 3600
+Wire Wire Line
+	4185 3600 4800 3600
+Wire Wire Line
+	6400 3600 6400 3700
+Wire Wire Line
+	4800 4430 4800 4100
+Wire Wire Line
+	4800 3400 4800 3515
+$Comp
+L Pro-rescue:GND-power #PWR0102
+U 1 1 6028C56C
+P 6815 4000
+F 0 "#PWR0102" H 6815 3750 50  0001 C CNN
+F 1 "GND" H 6820 3827 50  0000 C CNN
+F 2 "" H 6815 4000 50  0001 C CNN
+F 3 "" H 6815 4000 50  0001 C CNN
+	1    6815 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4000 6815 4000
+Connection ~ 6815 4000
+Wire Wire Line
+	6400 4000 6400 4300
+Wire Wire Line
+	4800 3300 4800 3215
+$Comp
+L Pro-rescue:ADS1231IDR-ADS1231IDR U1
+U 1 1 601C0034
+P 5600 3500
+F 0 "U1" H 5600 4467 50  0000 C CNN
+F 1 "ADS1231" H 5600 4376 50  0000 C CNN
+F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 5600 3500 50  0001 L BNN
+F 3 "" H 5600 3500 50  0001 L BNN
+F 4 "ADS1231IDR" H 5600 3500 50  0001 L BNN "MP"
+F 5 "None" H 5600 3500 50  0001 L BNN "Price"
+F 6 "https://pricing.snapeda.com/search/part/ADS1231IDR/?ref=eda" H 5600 3500 50  0001 L BNN "Purchase-URL"
+F 7 "Texas Instruments" H 5600 3500 50  0001 L BNN "MF"
+F 8 "SOIC-16 Texas Instruments" H 5600 3500 50  0001 L BNN "Package"
+F 9 "Bad" H 5600 3500 50  0001 L BNN "Availability"
+F 10 "24-Bit, 80SPS, 1-Ch Delta-Sigma ADC for Resistive Bridge Sensors & Weigh Scales 16-SOIC -40 to 85" H 5600 3500 50  0001 L BNN "Description"
+	1    5600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6815 4000 8700 4000
+$EndSCHEMATC
