@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Pro-rescue)(type Legacy)(uri ${KIPRJMOD}/Pro-rescue.lib)(options "")(descr ""))
-)
