@@ -128,10 +128,8 @@ F 3 "" H 6010 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4575 4200 4775 4200
-Text HLabel 4560 4500 0    50   Output ~ 0
+Text HLabel 4575 4400 0    50   Output ~ 0
 GSM_SHDN
-Wire Wire Line
-	5050 4500 4560 4500
 $Comp
 L Sysbee-rescue:AP1117-33-Regulator_Linear U?
 U 1 1 60437D58
@@ -219,27 +217,6 @@ F 3 "" H 7250 4450 50  0001 C CNN
 	1    7250 4450
 	0    1    1    0   
 $EndComp
-Connection ~ 5050 4200
-Wire Wire Line
-	5050 4200 5050 4300
-Wire Wire Line
-	5050 4300 5050 4400
-Connection ~ 5050 4300
-$Comp
-L sysbee:LT1764 U2
-U 1 1 6046F3AF
-P 5450 4200
-F 0 "U2" H 5500 4525 50  0000 C CNN
-F 1 "LT1764" H 5500 4450 50  0000 C CNN
-F 2 "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3mm_ThermalVias" H 5050 4750 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1761sff.pdf" H 5450 4200 50  0001 C CNN
-	1    5450 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 4900 5250 4975
-Wire Wire Line
-	5250 4975 5350 4975
 Wire Wire Line
 	6750 4975 6750 4575
 $Comp
@@ -265,15 +242,9 @@ F 3 "~" H 6300 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 4500 6100 4500
-Wire Wire Line
-	6100 4500 6100 4550
-Wire Wire Line
 	6100 4550 6300 4550
 Wire Wire Line
 	6300 4250 6300 4200
-Wire Wire Line
-	5950 4200 6075 4200
 Wire Wire Line
 	6300 4200 6750 4200
 Connection ~ 6300 4200
@@ -305,52 +276,9 @@ Wire Wire Line
 	4775 4550 4775 4200
 Connection ~ 4775 4200
 Wire Wire Line
-	4775 4200 5050 4200
-Wire Wire Line
 	4775 4850 4775 4975
 Wire Wire Line
-	4775 4975 5250 4975
-Connection ~ 5250 4975
-Connection ~ 6000 4975
-Wire Wire Line
 	6000 4975 6300 4975
-Wire Wire Line
-	5350 4900 5350 4975
-Connection ~ 5350 4975
-Wire Wire Line
-	5350 4975 5450 4975
-Wire Wire Line
-	5450 4900 5450 4975
-Connection ~ 5450 4975
-Wire Wire Line
-	5450 4975 5550 4975
-Wire Wire Line
-	5550 4900 5550 4975
-Connection ~ 5550 4975
-Wire Wire Line
-	5550 4975 5650 4975
-Wire Wire Line
-	5650 4900 5650 4975
-Connection ~ 5650 4975
-Wire Wire Line
-	5650 4975 5750 4975
-Wire Wire Line
-	5750 4900 5750 4975
-Connection ~ 5750 4975
-Wire Wire Line
-	5750 4975 6000 4975
-Wire Wire Line
-	5950 4300 6075 4300
-Wire Wire Line
-	6075 4300 6075 4200
-Connection ~ 6075 4200
-Wire Wire Line
-	6075 4200 6300 4200
-Wire Wire Line
-	5950 4400 6075 4400
-Wire Wire Line
-	6075 4400 6075 4300
-Connection ~ 6075 4300
 Text Notes 3700 4900 0    50   ~ 0
 Condensateur de 10uF 16
 $Comp
@@ -368,4 +296,33 @@ Text Notes 6800 2050 0    50   ~ 0
 Condensateur de 10uF 16
 Text Notes 4900 2500 0    50   ~ 0
 Condensateur de 47uF 16V\n
+$Comp
+L Regulator_Linear:MIC29302WU U2
+U 1 1 6048195D
+P 5500 4300
+F 0 "U2" H 5500 4667 50  0000 C CNN
+F 1 "MIC29302WU" H 5500 4576 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5600 4050 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/20005685a.pdf" H 5500 4300 50  0001 C CNN
+	1    5500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4400 5900 4400
+Wire Wire Line
+	6100 4400 6100 4550
+Wire Wire Line
+	5900 4200 6300 4200
+Wire Wire Line
+	4775 4200 5100 4200
+Wire Wire Line
+	4575 4400 5100 4400
+Connection ~ 6000 4975
+Wire Wire Line
+	5500 4600 5500 4975
+Wire Wire Line
+	4775 4975 5500 4975
+Connection ~ 5500 4975
+Wire Wire Line
+	5500 4975 6000 4975
 $EndSCHEMATC

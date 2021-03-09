@@ -16,40 +16,40 @@ $EndDescr
 $Comp
 L Sysbee-rescue:C-Device C?
 U 1 1 60440282
-P 5725 1900
+P 8825 1775
 AR Path="/60193A3A/60440282" Ref="C?"  Part="1" 
 AR Path="/60439374/60440282" Ref="C5"  Part="1" 
-F 0 "C5" H 5840 1946 50  0000 L CNN
-F 1 "100n" H 5840 1855 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5763 1750 50  0001 C CNN
-F 3 "~" H 5725 1900 50  0001 C CNN
-	1    5725 1900
+F 0 "C5" H 8940 1821 50  0000 L CNN
+F 1 "100n" H 8940 1730 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 8863 1625 50  0001 C CNN
+F 3 "~" H 8825 1775 50  0001 C CNN
+	1    8825 1775
 	-1   0    0    1   
 $EndComp
 $Comp
 L Sysbee-rescue:C-Device C?
 U 1 1 60440288
-P 5275 1900
+P 8050 1775
 AR Path="/60193A3A/60440288" Ref="C?"  Part="1" 
 AR Path="/60439374/60440288" Ref="C3"  Part="1" 
-F 0 "C3" H 5390 1946 50  0000 L CNN
-F 1 "100n" H 5390 1855 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5313 1750 50  0001 C CNN
-F 3 "~" H 5275 1900 50  0001 C CNN
-	1    5275 1900
+F 0 "C3" H 8165 1821 50  0000 L CNN
+F 1 "100n" H 8165 1730 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 8088 1625 50  0001 C CNN
+F 3 "~" H 8050 1775 50  0001 C CNN
+	1    8050 1775
 	-1   0    0    1   
 $EndComp
 $Comp
 L Sysbee-rescue:C-Device C?
 U 1 1 6044029B
-P 5025 1900
+P 7650 1775
 AR Path="/60193A3A/6044029B" Ref="C?"  Part="1" 
 AR Path="/60439374/6044029B" Ref="C2"  Part="1" 
-F 0 "C2" H 5140 1946 50  0000 L CNN
-F 1 "100n" H 5140 1855 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5063 1750 50  0001 C CNN
-F 3 "~" H 5025 1900 50  0001 C CNN
-	1    5025 1900
+F 0 "C2" H 7765 1821 50  0000 L CNN
+F 1 "100n" H 7765 1730 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 7688 1625 50  0001 C CNN
+F 3 "~" H 7650 1775 50  0001 C CNN
+	1    7650 1775
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -66,7 +66,7 @@ F 3 "" H 5400 5300 50  0001 C CNN
 	1    5400 5300
 	1    0    0    -1  
 $EndComp
-Text HLabel 5400 1675 2    50   Input ~ 0
+Text HLabel 5600 1050 2    50   Input ~ 0
 3,3V
 $Comp
 L Sysbee-rescue:GND-power #PWR?
@@ -81,8 +81,6 @@ F 3 "" H 4225 2575 50  0001 C CNN
 	1    4225 2575
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 1675 5400 1750
 $Comp
 L Sysbee-rescue:R_US-Device R?
 U 1 1 604402E7
@@ -106,7 +104,7 @@ Wire Wire Line
 	5400 5075 5400 5300
 Text HLabel 4675 4675 0    50   Input ~ 0
 GSM_SHDN
-Text Label 4550 4375 2    50   ~ 0
+Text Label 6225 3775 0    50   ~ 0
 SD_CS
 $Comp
 L Sysbee-rescue:R_US-Device R2
@@ -153,8 +151,6 @@ Text Label 6225 3975 0    50   ~ 0
 SPI_MISO
 Text Label 6225 3875 0    50   ~ 0
 SPI_CLK
-Text Label 6225 3775 0    50   ~ 0
-SPI_SS
 Wire Wire Line
 	7175 3350 7175 3400
 $Comp
@@ -187,8 +183,6 @@ Wire Wire Line
 	4750 3775 4600 3775
 Wire Wire Line
 	4750 4675 4675 4675
-Wire Wire Line
-	4550 4375 4750 4375
 Wire Wire Line
 	6050 4275 6250 4275
 Wire Wire Line
@@ -279,92 +273,32 @@ Wire Wire Line
 	7900 4675 7725 4675
 Wire Wire Line
 	7900 4875 7725 4875
-Wire Wire Line
-	5250 5075 5350 5075
-Wire Wire Line
-	5350 5075 5400 5075
-Connection ~ 5350 5075
-Wire Wire Line
-	5400 5075 5450 5075
-Connection ~ 5450 5075
-Wire Wire Line
-	5450 5075 5550 5075
-Wire Wire Line
-	7250 5075 5550 5075
-Connection ~ 5550 5075
-$Comp
-L Sysbee-rescue:STM32L073CZTx-MCU_ST_STM32L0 U?
-U 1 1 604402A8
-P 5450 3575
-AR Path="/60193A3A/604402A8" Ref="U?"  Part="1" 
-AR Path="/60439374/604402A8" Ref="U1"  Part="1" 
-F 0 "U1" H 5444 5712 50  0000 C CNN
-F 1 "STM32L073CZTx" H 5432 5636 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4850 2175 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141036.pdf" H 5450 3575 50  0001 C CNN
-	1    5450 3575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 2075 5275 2075
-Wire Wire Line
-	5025 2075 5250 2075
 $Comp
 L Sysbee-rescue:C-Device C?
 U 1 1 6044028E
-P 5500 1900
+P 8425 1775
 AR Path="/60193A3A/6044028E" Ref="C?"  Part="1" 
 AR Path="/60439374/6044028E" Ref="C4"  Part="1" 
-F 0 "C4" H 5615 1946 50  0000 L CNN
-F 1 "100n" H 5615 1855 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5538 1750 50  0001 C CNN
-F 3 "~" H 5500 1900 50  0001 C CNN
-	1    5500 1900
+F 0 "C4" H 8540 1821 50  0000 L CNN
+F 1 "100n" H 8540 1730 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 8463 1625 50  0001 C CNN
+F 3 "~" H 8425 1775 50  0001 C CNN
+	1    8425 1775
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5550 2075 5550 2050
-Wire Wire Line
-	5550 2050 5725 2050
 $Comp
 L Sysbee-rescue:C-Device C?
 U 1 1 6044C47E
-P 5950 1900
+P 9225 1775
 AR Path="/60193A3A/6044C47E" Ref="C?"  Part="1" 
 AR Path="/60439374/6044C47E" Ref="C13"  Part="1" 
-F 0 "C13" H 6065 1946 50  0000 L CNN
-F 1 "100n" H 6065 1855 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5988 1750 50  0001 C CNN
-F 3 "~" H 5950 1900 50  0001 C CNN
-	1    5950 1900
+F 0 "C13" H 9340 1821 50  0000 L CNN
+F 1 "100n" H 9340 1730 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 9263 1625 50  0001 C CNN
+F 3 "~" H 9225 1775 50  0001 C CNN
+	1    9225 1775
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5025 1750 5275 1750
-Connection ~ 5275 1750
-Wire Wire Line
-	5275 1750 5400 1750
-Connection ~ 5500 1750
-Wire Wire Line
-	5500 1750 5725 1750
-Connection ~ 5725 1750
-Wire Wire Line
-	5725 1750 5950 1750
-Wire Wire Line
-	5025 2075 5025 2050
-Wire Wire Line
-	5275 2075 5275 2050
-Wire Wire Line
-	5450 2075 5500 2075
-Wire Wire Line
-	5500 2075 5500 2050
-Wire Wire Line
-	5650 2075 5950 2075
-Wire Wire Line
-	5950 2075 5950 2050
-Connection ~ 5400 1750
-Wire Wire Line
-	5400 1750 5500 1750
 Text Label 7300 2950 2    50   ~ 0
 UART_RX
 Text Label 7300 2850 2    50   ~ 0
@@ -572,22 +506,22 @@ Wire Wire Line
 Text Label 4575 3875 2    50   ~ 0
 LED_G
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J9
 U 1 1 60510236
 P 1625 3675
-F 0 "J?" H 1543 3350 50  0000 C CNN
+F 0 "J9" H 1543 3350 50  0000 C CNN
 F 1 "Conn_01x03" H 1543 3441 50  0000 C CNN
-F 2 "" H 1625 3675 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 1625 3675 50  0001 C CNN
 F 3 "~" H 1625 3675 50  0001 C CNN
 	1    1625 3675
 	-1   0    0    1   
 $EndComp
 $Comp
-L Sysbee-rescue:R_US-Device R?
+L Sysbee-rescue:R_US-Device R9
 U 1 1 60511F3C
 P 2250 3600
-F 0 "R?" H 2318 3646 50  0000 L CNN
-F 1 "140" H 2318 3555 50  0000 L CNN
+F 0 "R9" H 2318 3646 50  0000 L CNN
+F 1 "4.7k" H 2318 3555 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2290 3590 50  0001 C CNN
 F 3 "~" H 2250 3600 50  0001 C CNN
 	1    2250 3600
@@ -611,8 +545,8 @@ U 1 1 6051A236
 P 1825 3925
 AR Path="/60195EBB/6051A236" Ref="#PWR?"  Part="1" 
 AR Path="/60193A3A/6051A236" Ref="#PWR?"  Part="1" 
-AR Path="/60439374/6051A236" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1825 3675 50  0001 C CNN
+AR Path="/60439374/6051A236" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 1825 3675 50  0001 C CNN
 F 1 "GND" H 1830 3752 50  0000 C CNN
 F 2 "" H 1825 3925 50  0001 C CNN
 F 3 "" H 1825 3925 50  0001 C CNN
@@ -639,4 +573,89 @@ Text Label 6200 4575 0    50   ~ 0
 TEMP
 Text Label 2500 3750 0    50   ~ 0
 TEMP
+Wire Wire Line
+	7250 5075 5550 5075
+Connection ~ 5550 5075
+Wire Wire Line
+	5450 5075 5550 5075
+Wire Wire Line
+	5400 5075 5450 5075
+Connection ~ 5450 5075
+Wire Wire Line
+	5350 5075 5400 5075
+Wire Wire Line
+	5250 5075 5350 5075
+Connection ~ 5350 5075
+$Comp
+L Sysbee-rescue:STM32L073CZTx-MCU_ST_STM32L0 U?
+U 1 1 604402A8
+P 5450 3575
+AR Path="/60193A3A/604402A8" Ref="U?"  Part="1" 
+AR Path="/60439374/604402A8" Ref="U1"  Part="1" 
+F 0 "U1" H 5444 5712 50  0000 C CNN
+F 1 "STM32L073CZTx" H 5432 5636 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4850 2175 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141036.pdf" H 5450 3575 50  0001 C CNN
+	1    5450 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2075 5350 2075
+Connection ~ 5350 2075
+Wire Wire Line
+	5350 2075 5450 2075
+Connection ~ 5450 2075
+Wire Wire Line
+	5450 2075 5550 2075
+Connection ~ 5550 2075
+Wire Wire Line
+	5550 2075 5650 2075
+Wire Wire Line
+	5450 2075 5450 1950
+Text Label 5450 1950 0    50   ~ 0
+3,3V
+Wire Wire Line
+	7650 1925 8050 1925
+Connection ~ 8050 1925
+Wire Wire Line
+	8050 1925 8425 1925
+Connection ~ 8425 1925
+Wire Wire Line
+	8425 1925 8825 1925
+Connection ~ 8825 1925
+Wire Wire Line
+	8825 1925 9225 1925
+Wire Wire Line
+	7650 1625 8050 1625
+Connection ~ 8050 1625
+Wire Wire Line
+	8050 1625 8425 1625
+Connection ~ 8425 1625
+Wire Wire Line
+	8425 1625 8825 1625
+Connection ~ 8825 1625
+Wire Wire Line
+	8825 1625 9225 1625
+Text Label 8425 1450 0    50   ~ 0
+3,3V
+Wire Wire Line
+	8425 1450 8425 1625
+Wire Wire Line
+	8425 1625 8425 1650
+$Comp
+L Sysbee-rescue:GND-power #PWR?
+U 1 1 604D158F
+P 8425 2100
+AR Path="/60195E38/604D158F" Ref="#PWR?"  Part="1" 
+AR Path="/604D158F" Ref="#PWR?"  Part="1" 
+AR Path="/60439374/604D158F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8425 1850 50  0001 C CNN
+F 1 "GND" H 8430 1927 50  0000 C CNN
+F 2 "" H 8425 2100 50  0001 C CNN
+F 3 "" H 8425 2100 50  0001 C CNN
+	1    8425 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8425 2100 8425 1925
 $EndSCHEMATC

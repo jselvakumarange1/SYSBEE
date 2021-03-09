@@ -71,7 +71,7 @@ U 1 1 60473CBC
 P 6200 2500
 F 0 "C10" H 6315 2546 50  0000 L CNN
 F 1 "47u" H 6315 2455 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x5.4" H 6238 2350 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6238 2350 50  0001 C CNN
 F 3 "~" H 6200 2500 50  0001 C CNN
 	1    6200 2500
 	-1   0    0    1   
@@ -91,8 +91,6 @@ F 3 "" H 6200 2275 50  0001 C CNN
 	1    6200 2275
 	-1   0    0    1   
 $EndComp
-Text Label 6425 2750 0    50   ~ 0
-V3,3
 $Comp
 L Sysbee-rescue:C-Device C9
 U 1 1 6047792E
@@ -194,7 +192,9 @@ A-
 Wire Wire Line
 	5975 2750 6200 2750
 Connection ~ 5975 2750
-Connection ~ 6200 2750
+Text HLabel 5000 2750 0    50   Input ~ 0
+3,3V
 Wire Wire Line
-	6200 2750 6425 2750
+	5000 2750 5075 2750
+Connection ~ 5075 2750
 $EndSCHEMATC

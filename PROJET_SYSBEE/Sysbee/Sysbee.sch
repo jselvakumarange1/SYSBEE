@@ -160,9 +160,10 @@ F5 "E+" I L 4450 3175 50
 F6 "E-" I L 4450 2775 50 
 F7 "A+" I L 4450 3050 50 
 F8 "A-" I L 4450 2925 50 
+F9 "3,3V" I L 4450 3275 50 
 $EndSheet
 Wire Wire Line
-	4575 4100 5550 4100
+	4575 4100 4725 4100
 Wire Wire Line
 	4575 4025 5450 4025
 Wire Wire Line
@@ -408,4 +409,15 @@ Text Label 8675 4600 2    50   ~ 0
 3,9V
 Wire Wire Line
 	8750 4600 8675 4600
+Wire Wire Line
+	4725 4100 4725 3700
+Wire Wire Line
+	4725 3700 4350 3700
+Wire Wire Line
+	4350 3700 4350 3275
+Wire Wire Line
+	4350 3275 4450 3275
+Connection ~ 4725 4100
+Wire Wire Line
+	4725 4100 5550 4100
 $EndSCHEMATC
