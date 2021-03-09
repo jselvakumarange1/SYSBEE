@@ -1,0 +1,489 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:AP1117-33 U10
+U 1 1 60586ADD
+P 5225 2325
+F 0 "U10" H 5225 2567 50  0000 C CNN
+F 1 "AP1117-33" H 5225 2476 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5225 2525 50  0001 C CNN
+F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 5325 2075 50  0001 C CNN
+	1    5225 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 2625 5225 2725
+$Comp
+L power:GND #PWR033
+U 1 1 60588A1A
+P 5225 2725
+F 0 "#PWR033" H 5225 2475 50  0001 C CNN
+F 1 "GND" H 5230 2552 50  0000 C CNN
+F 2 "" H 5225 2725 50  0001 C CNN
+F 3 "" H 5225 2725 50  0001 C CNN
+	1    5225 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 2325 5775 2325
+Wire Wire Line
+	5775 2325 5775 2400
+Connection ~ 5775 2325
+Wire Wire Line
+	5775 2325 6075 2325
+$Comp
+L Device:C C21
+U 1 1 60589849
+P 5775 2550
+F 0 "C21" H 5890 2596 50  0000 L CNN
+F 1 "C" H 5890 2505 50  0000 L CNN
+F 2 "" H 5813 2400 50  0001 C CNN
+F 3 "~" H 5775 2550 50  0001 C CNN
+	1    5775 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 6058A15B
+P 5775 2775
+F 0 "#PWR035" H 5775 2525 50  0001 C CNN
+F 1 "GND" H 5780 2602 50  0000 C CNN
+F 2 "" H 5775 2775 50  0001 C CNN
+F 3 "" H 5775 2775 50  0001 C CNN
+	1    5775 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 2775 5775 2700
+Text HLabel 6075 2325 2    50   Output ~ 0
+3.3V
+Wire Wire Line
+	4800 2325 4800 2425
+Connection ~ 4800 2325
+Wire Wire Line
+	4800 2325 4925 2325
+$Comp
+L Device:C C20
+U 1 1 6058B978
+P 4800 2575
+F 0 "C20" H 4915 2621 50  0000 L CNN
+F 1 "C" H 4915 2530 50  0000 L CNN
+F 2 "" H 4838 2425 50  0001 C CNN
+F 3 "~" H 4800 2575 50  0001 C CNN
+	1    4800 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 6058C667
+P 4800 2850
+F 0 "#PWR025" H 4800 2600 50  0001 C CNN
+F 1 "GND" H 4805 2677 50  0000 C CNN
+F 2 "" H 4800 2850 50  0001 C CNN
+F 3 "" H 4800 2850 50  0001 C CNN
+	1    4800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2850 4800 2725
+Wire Wire Line
+	4025 2325 4175 2325
+$Comp
+L Device:D_Shockley D7
+U 1 1 6058DBF5
+P 4175 2525
+F 0 "D7" V 4129 2604 50  0000 L CNN
+F 1 "D_Shockley" V 4220 2604 50  0000 L CNN
+F 2 "" H 4175 2525 50  0001 C CNN
+F 3 "~" H 4175 2525 50  0001 C CNN
+	1    4175 2525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4175 2375 4175 2325
+Connection ~ 4175 2325
+Wire Wire Line
+	4175 2325 4800 2325
+Wire Wire Line
+	4175 2675 4175 2775
+$Comp
+L power:GND #PWR012
+U 1 1 6058F503
+P 4175 2775
+F 0 "#PWR012" H 4175 2525 50  0001 C CNN
+F 1 "GND" H 4180 2602 50  0000 C CNN
+F 2 "" H 4175 2775 50  0001 C CNN
+F 3 "" H 4175 2775 50  0001 C CNN
+	1    4175 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Shockley D6
+U 1 1 60590BF2
+P 3875 2325
+F 0 "D6" H 3825 2125 50  0000 L CNN
+F 1 "D_Shockley" H 3750 2200 50  0000 L CNN
+F 2 "" H 3875 2325 50  0001 C CNN
+F 3 "~" H 3875 2325 50  0001 C CNN
+	1    3875 2325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3725 2325 3400 2325
+Text HLabel 3400 2325 0    50   Input ~ 0
+12V
+Wire Notes Line
+	3100 3150 6425 3150
+Wire Notes Line
+	6425 3150 6425 1950
+Wire Notes Line
+	6425 1950 3100 1950
+Wire Notes Line
+	3100 1950 3100 3150
+Wire Wire Line
+	1275 6325 1375 6325
+Wire Wire Line
+	1375 6325 1375 6875
+$Comp
+L Device:C C19
+U 1 1 60596E7B
+P 1375 7025
+F 0 "C19" H 1490 7071 50  0000 L CNN
+F 1 "C" H 1490 6980 50  0000 L CNN
+F 2 "" H 1413 6875 50  0001 C CNN
+F 3 "~" H 1375 7025 50  0001 C CNN
+	1    1375 7025
+	1    0    0    -1  
+$EndComp
+Text HLabel 1225 6525 0    50   Input ~ 0
+GSM_SHDN
+Text HLabel 1275 6325 0    50   Input ~ 0
+12V
+Wire Wire Line
+	1375 7175 1375 7200
+Wire Wire Line
+	1400 7200 2050 7200
+Wire Wire Line
+	2050 7200 2150 7200
+Connection ~ 2050 7200
+Wire Wire Line
+	2150 7200 2250 7200
+Connection ~ 2150 7200
+Wire Wire Line
+	2250 7200 2350 7200
+Connection ~ 2250 7200
+Wire Wire Line
+	2350 7200 2450 7200
+Connection ~ 2350 7200
+Wire Wire Line
+	2450 7200 2550 7200
+Connection ~ 2450 7200
+Wire Wire Line
+	2725 6325 2800 6325
+Wire Wire Line
+	2800 6325 2800 6425
+Wire Wire Line
+	2800 6425 2725 6425
+Wire Wire Line
+	2725 6525 2800 6525
+Wire Wire Line
+	2800 6525 2800 6425
+Connection ~ 2800 6425
+Wire Wire Line
+	2550 7200 2850 7200
+Wire Wire Line
+	4175 6325 3700 6325
+Connection ~ 2550 7200
+Connection ~ 2800 6325
+$Comp
+L Device:R R20
+U 1 1 6059EDF8
+P 3225 6525
+F 0 "R20" H 3295 6571 50  0000 L CNN
+F 1 "R" H 3295 6480 50  0000 L CNN
+F 2 "" V 3155 6525 50  0001 C CNN
+F 3 "~" H 3225 6525 50  0001 C CNN
+	1    3225 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 6059F3D4
+P 3225 6925
+F 0 "R21" H 3295 6971 50  0000 L CNN
+F 1 "R" H 3295 6880 50  0000 L CNN
+F 2 "" V 3155 6925 50  0001 C CNN
+F 3 "~" H 3225 6925 50  0001 C CNN
+	1    3225 6925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 6375 3225 6325
+Connection ~ 3225 6325
+Wire Wire Line
+	3225 6325 2800 6325
+Wire Wire Line
+	3225 6775 3225 6725
+Wire Wire Line
+	2725 6625 3075 6625
+Wire Wire Line
+	3075 6625 3075 6725
+Wire Wire Line
+	3075 6725 3225 6725
+Connection ~ 3225 6725
+Wire Wire Line
+	3225 6725 3225 6675
+Wire Wire Line
+	3225 7075 3225 7200
+Connection ~ 3225 7200
+Wire Wire Line
+	3225 7200 3700 7200
+$Comp
+L Device:C C29
+U 1 1 605A4C7F
+P 3700 6675
+F 0 "C29" H 3815 6721 50  0000 L CNN
+F 1 "C" H 3815 6630 50  0000 L CNN
+F 2 "" H 3738 6525 50  0001 C CNN
+F 3 "~" H 3700 6675 50  0001 C CNN
+	1    3700 6675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6525 3700 6325
+Connection ~ 3700 6325
+Wire Wire Line
+	3700 6325 3225 6325
+Wire Wire Line
+	3700 6825 3700 7200
+Connection ~ 3700 7200
+Wire Wire Line
+	3700 7200 4175 7200
+$Comp
+L Device:D_Shockley D8
+U 1 1 605A74C8
+P 4175 6675
+F 0 "D8" V 4129 6754 50  0000 L CNN
+F 1 "D_Shockley" V 4220 6754 50  0000 L CNN
+F 2 "" H 4175 6675 50  0001 C CNN
+F 3 "~" H 4175 6675 50  0001 C CNN
+	1    4175 6675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4175 6525 4175 6325
+Wire Wire Line
+	4175 7200 4175 6825
+Wire Wire Line
+	2850 7200 2850 7300
+Connection ~ 2850 7200
+$Comp
+L power:GND #PWR034
+U 1 1 605AA913
+P 2850 7300
+F 0 "#PWR034" H 2850 7050 50  0001 C CNN
+F 1 "GND" H 2855 7127 50  0000 C CNN
+F 2 "" H 2850 7300 50  0001 C CNN
+F 3 "" H 2850 7300 50  0001 C CNN
+	1    2850 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 6525 1225 6525
+Wire Notes Line
+	2975 3975 2975 5700
+Wire Notes Line
+	7475 3975 2975 3975
+Text Notes 4250 1850 0    50   ~ 0
+Alimentation µcontroleur\n
+Text Notes 4725 3900 0    50   ~ 0
+Alimentation GSM
+Wire Wire Line
+	4175 6325 4275 6325
+Connection ~ 4175 6325
+Text HLabel 4275 6325 2    50   Input ~ 0
+3.9V
+$Comp
+L Regulator_Linear:MIC29302WU U?
+U 1 1 60496FA0
+P 5075 4425
+F 0 "U?" H 5075 4792 50  0000 C CNN
+F 1 "MIC29302WU" H 5075 4701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5175 4175 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/20005685a.pdf" H 5075 4425 50  0001 C CNN
+	1    5075 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1375 6325 1850 6325
+Connection ~ 1375 6325
+Wire Wire Line
+	2250 6725 2250 6925
+Wire Wire Line
+	2850 7200 3225 7200
+Wire Wire Line
+	2150 6925 2250 6925
+Wire Wire Line
+	2150 6925 2150 7200
+Connection ~ 2250 6925
+Wire Wire Line
+	2250 6925 2250 7200
+Wire Wire Line
+	2250 6925 2350 6925
+Wire Wire Line
+	2350 6925 2350 7200
+Wire Wire Line
+	2050 6925 2150 6925
+Wire Wire Line
+	2050 6925 2050 7200
+Connection ~ 2150 6925
+Wire Wire Line
+	2350 6925 2450 6925
+Wire Wire Line
+	2450 6925 2450 7200
+Connection ~ 2350 6925
+Wire Wire Line
+	2450 6925 2550 6925
+Wire Wire Line
+	2550 6925 2550 7200
+Connection ~ 2450 6925
+Wire Wire Line
+	4675 4325 4550 4325
+Wire Wire Line
+	4325 4325 4325 4775
+Connection ~ 4325 4325
+Wire Wire Line
+	4325 4325 4200 4325
+Wire Wire Line
+	4675 4525 4550 4525
+Wire Wire Line
+	4550 4525 4550 4325
+Connection ~ 4550 4325
+Wire Wire Line
+	4550 4325 4325 4325
+Wire Wire Line
+	5075 4725 5075 4925
+Wire Wire Line
+	5475 4325 5700 4325
+$Comp
+L Device:R R?
+U 1 1 604C74B2
+P 5700 4475
+F 0 "R?" H 5770 4521 50  0000 L CNN
+F 1 "R" H 5770 4430 50  0000 L CNN
+F 2 "" V 5630 4475 50  0001 C CNN
+F 3 "~" H 5700 4475 50  0001 C CNN
+	1    5700 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 4525 5525 4525
+Wire Wire Line
+	5525 4525 5525 4675
+Wire Wire Line
+	5525 4675 5700 4675
+Wire Wire Line
+	5700 4675 5700 4625
+Wire Wire Line
+	5700 4325 5975 4325
+Connection ~ 5700 4325
+$Comp
+L Device:C C?
+U 1 1 604CF0E3
+P 5975 4500
+F 0 "C?" H 6090 4546 50  0000 L CNN
+F 1 "C" H 6090 4455 50  0000 L CNN
+F 2 "" H 6013 4350 50  0001 C CNN
+F 3 "~" H 5975 4500 50  0001 C CNN
+	1    5975 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 4350 5975 4325
+Connection ~ 5975 4325
+Wire Wire Line
+	5975 4325 6050 4325
+Wire Wire Line
+	5975 4650 5975 4700
+$Comp
+L power:GND #PWR?
+U 1 1 604D2E18
+P 4325 4775
+F 0 "#PWR?" H 4325 4525 50  0001 C CNN
+F 1 "GND" H 4330 4602 50  0000 C CNN
+F 2 "" H 4325 4775 50  0001 C CNN
+F 3 "" H 4325 4775 50  0001 C CNN
+	1    4325 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604D3399
+P 5075 4925
+F 0 "#PWR?" H 5075 4675 50  0001 C CNN
+F 1 "GND" H 5080 4752 50  0000 C CNN
+F 2 "" H 5075 4925 50  0001 C CNN
+F 3 "" H 5075 4925 50  0001 C CNN
+	1    5075 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604D3933
+P 5975 4700
+F 0 "#PWR?" H 5975 4450 50  0001 C CNN
+F 1 "GND" H 5980 4527 50  0000 C CNN
+F 2 "" H 5975 4700 50  0001 C CNN
+F 3 "" H 5975 4700 50  0001 C CNN
+	1    5975 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4675 5700 4725
+Connection ~ 5700 4675
+$Comp
+L Device:R R?
+U 1 1 604D5B5D
+P 5700 4875
+F 0 "R?" H 5770 4921 50  0000 L CNN
+F 1 "R" H 5770 4830 50  0000 L CNN
+F 2 "" V 5630 4875 50  0001 C CNN
+F 3 "~" H 5700 4875 50  0001 C CNN
+	1    5700 4875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5025 5700 5050
+$Comp
+L power:GND #PWR?
+U 1 1 604D7CDB
+P 5700 5050
+F 0 "#PWR?" H 5700 4800 50  0001 C CNN
+F 1 "GND" H 5705 4877 50  0000 C CNN
+F 2 "" H 5700 5050 50  0001 C CNN
+F 3 "" H 5700 5050 50  0001 C CNN
+	1    5700 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 4200 4325 0    50   Input ~ 0
+3.3V
+Text HLabel 6050 4325 2    50   Output ~ 0
+2.5V
+Wire Notes Line
+	2975 5700 7475 5700
+Wire Notes Line
+	7475 3975 7475 5700
+$EndSCHEMATC

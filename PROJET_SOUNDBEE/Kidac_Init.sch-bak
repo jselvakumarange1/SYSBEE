@@ -1,0 +1,176 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 590  630  1230 500 
+U 6018AF76
+F0 "preampli_micro" 50
+F1 "preampli_micro.sch" 50
+F2 "OUT" O R 1820 850 50 
+F3 "A0" I L 590 710 50 
+$EndSheet
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 603D5E91
+P 1180 5035
+F 0 "H1" V 1030 5205 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1120 5175 50  0000 L CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 1180 5035 50  0001 C CNN
+F 3 "~" H 1180 5035 50  0001 C CNN
+	1    1180 5035
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 603DABBC
+P 1180 5255
+F 0 "H2" V 1030 5425 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1120 5395 50  0000 L CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 1180 5255 50  0001 C CNN
+F 3 "~" H 1180 5255 50  0001 C CNN
+	1    1180 5255
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 603DBA15
+P 1180 5445
+F 0 "H3" V 1030 5615 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1120 5585 50  0000 L CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 1180 5445 50  0001 C CNN
+F 3 "~" H 1180 5445 50  0001 C CNN
+	1    1180 5445
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 603DC7D9
+P 1180 5655
+F 0 "H4" V 1030 5825 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1120 5795 50  0000 L CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 1180 5655 50  0001 C CNN
+F 3 "~" H 1180 5655 50  0001 C CNN
+	1    1180 5655
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1080 5035 1080 5255
+Wire Wire Line
+	1080 5255 1080 5445
+Connection ~ 1080 5255
+Wire Wire Line
+	1080 5655 1080 5445
+Connection ~ 1080 5445
+Wire Wire Line
+	1080 5655 1080 5855
+Connection ~ 1080 5655
+$Comp
+L power:GND #PWR010
+U 1 1 603E3500
+P 1080 5855
+F 0 "#PWR010" H 1080 5605 50  0001 C CNN
+F 1 "GND" H 1085 5682 50  0000 C CNN
+F 2 "" H 1080 5855 50  0001 C CNN
+F 3 "" H 1080 5855 50  0001 C CNN
+	1    1080 5855
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4995 4540 1300 770 
+U 601DB5CF
+F0 "GSM" 50
+F1 "GSM.sch" 50
+F2 "3.9V" I L 4995 4840 50 
+F3 "RX" I R 6295 4850 50 
+F4 "RST" I R 6295 4950 50 
+F5 "TX" I R 6295 4750 50 
+$EndSheet
+Wire Wire Line
+	550  710  590  710 
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 604E8674
+P 1185 3635
+F 0 "#FLG0101" H 1185 3710 50  0001 C CNN
+F 1 "PWR_FLAG" H 1185 3808 50  0000 C CNN
+F 2 "" H 1185 3635 50  0001 C CNN
+F 3 "~" H 1185 3635 50  0001 C CNN
+	1    1185 3635
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 604E8DF4
+P 1715 3635
+F 0 "#FLG0102" H 1715 3710 50  0001 C CNN
+F 1 "PWR_FLAG" H 1715 3808 50  0000 C CNN
+F 2 "" H 1715 3635 50  0001 C CNN
+F 3 "~" H 1715 3635 50  0001 C CNN
+	1    1715 3635
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 3005 770  1010 460 
+U 604158D3
+F0 "Sheet604158D2" 50
+F1 "file604158D2.sch" 50
+F2 "VCC" I L 3005 1010 50 
+F3 "OUT" O R 4015 1060 50 
+$EndSheet
+Wire Wire Line
+	1715 3635 1715 3855
+$Comp
+L power:GND #PWR0102
+U 1 1 604502F9
+P 1715 3855
+F 0 "#PWR0102" H 1715 3605 50  0001 C CNN
+F 1 "GND" H 1720 3682 50  0000 C CNN
+F 2 "" H 1715 3855 50  0001 C CNN
+F 3 "" H 1715 3855 50  0001 C CNN
+	1    1715 3855
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1185 3635 1185 3895
+$Sheet
+S 4825 2735 1560 760 
+U 60197589
+F0 "µcontroleur" 50
+F1 "µcontroleur.sch" 50
+F2 "3.3V" I L 4825 3415 50 
+F3 "GSM_SHDN" I L 4825 3325 50 
+F4 "RX" I R 6385 3405 50 
+F5 "TX" O R 6385 3305 50 
+F6 "DOUT" I L 4825 2985 50 
+$EndSheet
+$Sheet
+S 2325 2900 1250 475 
+U 60585DC5
+F0 "ALIM" 50
+F1 "alim23.sch" 50
+F2 "3.3V" O R 3575 3200 50 
+F3 "12V" I L 2325 3050 50 
+F4 "GSM_SHDN" I R 3575 3000 50 
+F5 "3.9V" I R 3575 3325 50 
+$EndSheet
+$Sheet
+S 6900 2750 1300 625 
+U 605BADD3
+F0 "Sheet605BADD2" 50
+F1 "file605BADD2.sch" 50
+$EndSheet
+Wire Wire Line
+	3550 3000 3650 3000
+$EndSCHEMATC
