@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
-Title "Schéma pcb"
+Title "Sysbee - Mesure de poids et détection d'essaimage"
 Date "2021-02-02"
 Rev "1.1"
 Comp "IUT de Cachan"
-Comment1 ""
+Comment1 "Denis Pénard"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -84,8 +84,8 @@ $EndComp
 $Sheet
 S 6350 2650 1275 750 
 U 60439374
-F0 "Microcontrôleur" 50
-F1 "Microcontrôleur.sch" 50
+F0 "Microcontroleur" 50
+F1 "Microcontroleur.sch" 50
 F2 "3,3V" I L 6350 3300 50 
 F3 "GSM_SHDN" I L 6350 3175 50 
 F4 "UC_TX-GSM_RX" O R 7625 3175 50 
