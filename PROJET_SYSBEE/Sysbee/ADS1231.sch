@@ -175,12 +175,12 @@ Wire Wire Line
 	3725 3650 3500 3650
 Wire Wire Line
 	3725 3950 3500 3950
-Text HLabel 7075 3150 2    50   Output ~ 0
-PWDRN
+Text HLabel 7075 3150 2    50   Input ~ 0
+ADC_PWDRN
 Text HLabel 7075 3300 2    50   Output ~ 0
-DOUT
-Text HLabel 7075 3450 2    50   Output ~ 0
-PD_SCK
+ADC_DOUT
+Text HLabel 7075 3450 2    50   Input ~ 0
+ADC_CLK
 Text HLabel 4900 3050 0    50   Input ~ 0
 E+
 Text HLabel 4900 4100 0    50   Input ~ 0

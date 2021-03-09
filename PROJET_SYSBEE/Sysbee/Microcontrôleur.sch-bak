@@ -142,9 +142,9 @@ $EndComp
 Wire Wire Line
 	7250 4775 7250 5075
 Text HLabel 4425 2975 0    50   Input ~ 0
-DOUT
-Text HLabel 4425 3075 0    50   Input ~ 0
-PD_SCK
+ADC_DOUT
+Text HLabel 4425 3075 0    50   Output ~ 0
+ADC_CLK
 Text Label 6225 4075 0    50   ~ 0
 SPI_MOSI
 Text Label 6225 3975 0    50   ~ 0
@@ -167,12 +167,12 @@ F 3 "" H 7175 3400 50  0001 C CNN
 	1    7175 3400
 	1    0    0    -1  
 $EndComp
-Text Label 7300 3050 2    50   ~ 0
-NRST
 Text Label 7300 3250 2    50   ~ 0
-SWCLK
+NRST
 Text Label 7300 3150 2    50   ~ 0
-SWDON
+SWCLK
+Text Label 7300 3050 2    50   ~ 0
+SWDIO
 Wire Wire Line
 	7475 3350 7175 3350
 Wire Wire Line
@@ -220,7 +220,7 @@ L Sysbee-rescue:Conn_01x06-Connector_Generic J7
 U 1 1 6038032B
 P 7675 3050
 F 0 "J7" H 7755 3042 50  0000 L CNN
-F 1 "Connecteur programmation" H 7755 2951 50  0000 L CNN
+F 1 "Conn Prog STLINKV2" H 7755 2951 50  0000 L CNN
 F 2 "Micro-match:Micro-match_6" H 7675 3050 50  0001 C CNN
 F 3 "~" H 7675 3050 50  0001 C CNN
 	1    7675 3050
@@ -261,14 +261,12 @@ P 8800 4675
 AR Path="/603301DD" Ref="J8"  Part="1" 
 AR Path="/60439374/603301DD" Ref="J8"  Part="1" 
 F 0 "J8" H 8750 5492 50  0000 C CNN
-F 1 "Micro_SD_Card_Det_Hirose_DM3AT" H 8750 5401 50  0000 C CNN
+F 1 "Micro_SD" H 8750 5401 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Molex_104031-0811" H 10850 5375 50  0001 C CNN
 F 3 "" H 8800 4775 50  0001 C CNN
 	1    8800 4675
 	1    0    0    -1  
 $EndComp
-Text Label 7725 4875 2    50   ~ 0
-SPI_MOSI
 Wire Wire Line
 	7900 4675 7725 4675
 Wire Wire Line
@@ -299,14 +297,14 @@ F 3 "~" H 9225 1775 50  0001 C CNN
 	1    9225 1775
 	-1   0    0    1   
 $EndComp
-Text Label 7300 2950 2    50   ~ 0
-UART_RX
 Text Label 7300 2850 2    50   ~ 0
+UART_RX
+Text Label 7300 2950 2    50   ~ 0
 UART_TX
 Wire Wire Line
 	4750 3175 4425 3175
-Text HLabel 4425 3175 0    50   Input ~ 0
-PWDRN
+Text HLabel 4425 3175 0    50   Output ~ 0
+ADC_PWDRN
 Text Label 4650 2275 2    50   ~ 0
 NRST
 $Comp
@@ -445,7 +443,7 @@ AR Path="/60195EBB/604402AE" Ref="RESET?"  Part="1"
 AR Path="/60193A3A/604402AE" Ref="RESET?"  Part="1" 
 AR Path="/60439374/604402AE" Ref="RESET1"  Part="1" 
 F 0 "RESET1" V 3471 2727 50  0000 R CNN
-F 1 "SW_Push" V 3380 2727 50  0000 R CNN
+F 1 "Reset" V 3380 2727 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_TL3305C" H 3425 2975 50  0001 C CNN
 F 3 "~" H 3425 2975 50  0001 C CNN
 	1    3425 2775
@@ -648,8 +646,8 @@ U 1 1 604D158F
 P 8425 2100
 AR Path="/60195E38/604D158F" Ref="#PWR?"  Part="1" 
 AR Path="/604D158F" Ref="#PWR?"  Part="1" 
-AR Path="/60439374/604D158F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8425 1850 50  0001 C CNN
+AR Path="/60439374/604D158F" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 8425 1850 50  0001 C CNN
 F 1 "GND" H 8430 1927 50  0000 C CNN
 F 2 "" H 8425 2100 50  0001 C CNN
 F 3 "" H 8425 2100 50  0001 C CNN
@@ -658,4 +656,6 @@ F 3 "" H 8425 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8425 2100 8425 1925
+Text Label 7725 4875 2    50   ~ 0
+SPI_MISO
 $EndSCHEMATC
