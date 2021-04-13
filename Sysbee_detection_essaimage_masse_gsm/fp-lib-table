@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Logos)(type KiCad)(uri ${KIPRJMOD}/logo_sysbee)(options "")(descr ""))
+  (lib (name microSD)(type KiCad)(uri ${KIPRJMOD}/librairie)(options "")(descr ""))
+)
